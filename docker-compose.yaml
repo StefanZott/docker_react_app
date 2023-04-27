@@ -9,10 +9,12 @@ services:
     volumes:
       - ./server:/Server/node_modules
 
-  # react:
-  #   build: ./Client
-  #   container_name: react_app_c
-  #   ports:
-  #     - '4000:80'
-  #   depends_on:
-  #     - server
+  client:
+    build: ./client
+    container_name: react_app_c
+    ports:
+      - '80:80'
+    depends_on:
+      - server
+    stdin_open: true
+    tty: true
