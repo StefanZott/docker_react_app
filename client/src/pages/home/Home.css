@@ -1,0 +1,13 @@
+#home-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+#home-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0.5;
+    padding: 200px;
+}

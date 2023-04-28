@@ -8,7 +8,6 @@ html, body, #root {
 
 #wrapper {
   display: flex !important;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   flex: 1;
 }
